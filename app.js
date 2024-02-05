@@ -5,7 +5,7 @@ let intentosDisponibles = 3;
 let intentos = 1;
 
 
-console.log(numeroSecreto);
+//console.log(numeroSecreto);
 
 
 function textoDeElementos(elemento, texto){
@@ -22,7 +22,7 @@ function nombreDeUsuario(){ //creamos una funcion para que aparezca una alerta c
  //   let numeroSecreto = Math.floor(Math.random()*10)+1; //Podemos cambiar el 'let' por 'return' para que lo mande a consola
     let numeroDeUsuario = parseInt(document.getElementById('numeroUsuario').value); //llamamos el elemento 'input', pero usando el document.getElementById, tomando el valor con el .value del final
    
-    console.log(intentos);
+    //console.log(intentos);
 
     if (numeroDeUsuario === numeroSecreto) {
         textoDeElementos('p', `¡Felicidades, has adivinado el número secreto en ${intentos} ${(intentos === 1) ? 'intento' : 'intentos'}!`);
@@ -48,7 +48,7 @@ function nombreDeUsuario(){ //creamos una funcion para que aparezca una alerta c
 function numeroRandom() {
 let numeroGenerado = Math.floor(Math.random()*numeroMaximo)+1; //Podemos cambiar el 'let' por 'return' para que lo mande a consola
     
-console.log(numerosSorteados);
+//console.log(numerosSorteados);
 
     if (numerosSorteados.length == numeroMaximo) {
          textoDeElementos('p', 'Ya has adivinado todos los números.');
@@ -76,7 +76,7 @@ function reiniciarJuego(){ //En esta función, cambiamos los mensajes de la func
     numeroSecreto = numeroRandom();
     intentos = 1;
    // arrayDeNumerosSecretos();
-    console.log(numeroSecreto);
+    //console.log(numeroSecreto);
     return;
 }
 
